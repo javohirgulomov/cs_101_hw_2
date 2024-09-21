@@ -4,16 +4,24 @@ using namespace std;
 
 int main() {
 
-    int a,b;
-    cin >>a >> b;
-    if (a==1 && b==1) {
-        cout << "Bus";
-    } else if (a==0 && b==1) {
-        cout << "Walk";
-    } else {
-        cout << "Bike";
-    }
+    int isWinter, isRaining;
 
+
+    cin >> isWinter;
+
+
+    cin >> isRaining;
+
+
+    if (isWinter == 1) {
+        cout << "Bus" << endl;
+    } else {
+        if (isRaining == 1) {
+            cout << "Walk" << endl;
+        } else {
+            cout << "Bike" << endl;
+        }
+    }
     return 0;
 }
 
